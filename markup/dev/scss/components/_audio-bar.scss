@@ -2,7 +2,7 @@
   height: 70px;
   background: #e6eef0;
   @include inline-space-reset;
-  
+
   &:not(:last-child) {
     margin: 0 0 45px;
   }
