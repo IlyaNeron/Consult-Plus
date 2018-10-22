@@ -1,0 +1,30 @@
+.social-links {
+  @include inline-space-reset;
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: $font-family-sans-serif;
+
+  li {
+    @include inline-space(1.8, 12px);
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+  }
+
+  .facebook {
+    color: #3b5998;
+  }
+
+  .twitter {
+    color: #50abf1;
+  }
+
+  .google {
+    color: #dc4b3f;
+  }
+
+}

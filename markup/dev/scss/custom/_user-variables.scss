@@ -1,0 +1,143 @@
+// colors
+$brand-primary: #4e4e4e;
+$brand-danger: #ffac56;
+$brand-info: #03b6e7;
+$gray-light: #e7eff1;
+$white: #fff;
+$gray-dark: #262829;
+$green: #16d428;
+$gray-light-blue: #ddf8ff;
+$gray-medium: #343a3b;
+$gray: #838b8c;
+$black: #000;
+$gray-light-2: #dee8eb;
+$dark-gray: #5e5e5e;
+
+// body
+$text-color: $gray;
+$font-size-base: 15px;
+$font-family-sans-serif: "Montserrat", "Domine", "Lato", Arial, sans-serif !default;
+$second-font-family-sans-serif: "Domine", "Montserrat", "Lato", Arial, sans-serif !default;
+$third-font-family-sans-serif: "Lato", "Domine", "Montserrat", Arial, sans-serif !default;
+$line-height-base: 1.8;
+
+// headings
+$font-size-h2: floor(($font-size-base * 2.18)); // ~32px
+$font-size-h3: ceil(($font-size-base * 1.2)); // ~18px
+$headings-color: $gray-medium;
+$headings-font-weight: 400;
+$user-h3-font-size: 18px;
+$user-h3-font-weight: 700;
+$user-h3-margin: 0 0 30px;
+$user-h4-font-size: 14px;
+$user-h4-font-weight: 600;
+$user-h4-margin: 0 0 15px;
+
+// links
+$link-hover-decoration: none;
+$link-hover-color: $brand-danger;
+
+// buttons
+$btn-border-radius-base: 30px;
+$btn-min-width: 150px;
+$btn-bg-hover-color: $brand-danger !important;
+$btn-text-transform: uppercase;
+$btn-default-border: $brand-danger;
+$base-btn-padding: 15px 30px;
+$btn-line-height: 1;
+$btn-font-size: 13px;
+
+// btn-default
+$btn-default-color: $white;
+$btn-default-bg: $green;
+$btn-default-border: transparent;
+
+// navs
+$nav-link-hover-bg: transparent;
+$nav-link-padding: 0;
+
+// navbar
+$navbar-margin-bottom: 0;
+$navbar-padding-horizontal: 0;
+
+// carousel-control
+$carousel-control-width: 40px;
+$carousel-control-opacity: 1;
+
+//components
+$padding-base-vertical: 10px;
+
+// grid
+$screen-md-min: 992px;
+$grid-float-breakpoint: $screen-md-min;
+
+// thumbnail
+$thumbnail-bg: transparent;
+$thumbnail-border: transparent;
+$thumbnail-padding: 0;
+
+// blockqoute
+$blockquote-font-size: 15px;
+$blockquote-bg-color: $brand-info;
+
+// forms
+$input-color: $black;
+$input-height-base: 45px;
+$input-border: #b5bdbe;
+$input-border-radius: 0;
+$base-input-padding: 15px 50px 15px 20px;
+$base-input-font-family: $second-font-family-sans-serif;
+
+// forms-subscribe
+$input-subscribe-bg-color: #323334;
+$input-subscribe-color: $white;
+$input-subscribe-font-size: 13px;
+$input-subscribe-border-radius: 30px;
+$input-subscribe-height: 52px;
+$input-subscribe-font-family: $font-family-sans-serif;
+$input-subscribe-padding: 20px 180px 20px 30px;
+
+// forms submit
+$input-submit-font-family: $font-family-sans-serif;
+$input-submit-bg-color: transparent;
+$input-submit-font-size: 13px;
+$input-submit-padding: 10px 0;
+$input-submit-color: $white;
+
+// pagination
+$base-pagination-width: 45px;
+$base-pagination-height: 45px;
+$base-pagination-border-radius: 50%;
+$base-pagination-border: 2px solid $gray-light;
+$base-pagination-padding: 10px;
+$base-pagination-font-size: 18px;
+$pagination-hover-bg: transparent;
+$pagination-color: $gray-medium;
+$pagination-hover-color: $gray-medium;
+$pagination-hover-border: $brand-danger;
+$pagination-active-color: $gray-medium;
+$pagination-active-bg: transparent;
+$pagination-active-border: $brand-danger;
+
+// tabs
+$panel-bg: transparent;
+$panel-heading-padding: 0;
+$panel-default-bg: transparent;
+$panel-title-font-size: 14px;
+$panel-default-border: 1px solid #e0e7e9;
+$base-panel-body-padding: 0 60px 50px;
+$sm-panel-body-padding: 0 0 20px;
+$md-panel-body-padding: 0 0 30px;
+
+// tables
+$table-cell-padding: 35px 35px 35px 40px;
+$table-border-color: #dae4e6;
+$table-font-size: 14px;
+$table-font-weight: 600;
+$table-margin-bottom: 15px;
+
+// pager
+$pager-border-radius: 0;
+
+// modals
+$modal-md: 900px;

@@ -1,0 +1,74 @@
+.audio-bar {
+  height: 70px;
+  background: #e6eef0;
+  @include inline-space-reset;
+  
+  &:not(:last-child) {
+    margin: 0 0 45px;
+  }
+
+  &-play, &-volume {
+    display: inline-block;
+    width: 70px;
+    @include inline-space(1.8, 30px);
+    height: 70px;
+    text-align: center;
+    position: relative;
+
+    i {
+      @include align-item;
+    }
+
+  }
+
+  &-line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    right: 30px;
+    height: 8px;
+    background: $white;
+    border-radius: 30px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 195px;
+      width: 20px;
+      height: 20px;
+      background: $brand-danger;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: $brand-danger;
+      width: 200px;
+      border-radius: 30px;
+    }
+
+  }
+
+  &-play {
+    border-right: 1px solid $white;
+  }
+
+  &-volume {
+    border-left: 1px solid $white;
+  }
+
+  &-wrapper {
+    display: inline-block;
+    height: 70px;
+    position: relative;
+    width: 707px;
+  }
+
+}

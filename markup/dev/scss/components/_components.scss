@@ -1,0 +1,211 @@
+.button-play {
+  @include align-item;
+  opacity: 0.8;
+  border: 5px solid $white;
+  background: #fa4545;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: $white;
+
+  i {
+    @include align-item;
+  }
+
+}
+
+.quote-element {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: $brand-info;
+  border: 3px solid $white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  img {
+    @include align-item;
+  }
+
+}
+
+.floats-wrapper {
+  @include clearfix;
+  margin-bottom: 45px;
+
+  .item-head {
+    margin: 0;
+    float: left;
+  }
+
+  .btn-default {
+    float: right;
+    margin-top: 7px;
+  }
+
+  .form-item-select {
+    float: right;
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .floats-wrapper {
+
+    .item-head {
+      display: block;
+      float: none;
+      margin: 0 0 15px;
+    }
+
+    .form-item-select {
+      float: none;
+      display: block;
+
+      .select-name {
+        padding: 0;
+        display: block;
+        margin: 0 0 15px;
+      }
+
+    }
+
+  }
+
+}
+
+.tabs-number {
+  position: absolute;
+  left: 0;
+  color: $white;
+  line-height: 1;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background: $green;
+  border-radius: 50%;
+  @include transition(background 0.3s linear);
+  text-align: center;
+  line-height: 25px;
+}
+
+.price {
+  color: $brand-info;
+  font-size: 36px;
+  font-weight: 600;
+
+  i {
+    font-style: normal;
+  }
+
+}
+
+.button-wrapper {
+  padding: 50px 0 30px;
+  position: relative;
+  border-top: 1px solid #dee8eb;
+}
+
+.icon-block {
+  font-size: 45px;
+  margin: 0 0 30px;
+  display: inline-block;
+  color: $brand-info;
+  vertical-align: top;
+
+  &-lg {
+    font-size: 60px;
+  }
+
+  &-green {
+    color: $green;
+  }
+
+  img {
+    vertical-align: top;
+  }
+
+}
+
+.blog-text {
+  color: $white;
+  text-transform: uppercase;
+
+  .blog-date {
+    background: $brand-danger;
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 115px;
+  }
+
+  .blog-name {
+    display: block;
+    background: #222;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+}
+
+.side-block-wrapper {
+
+  h3 {
+
+    &:not(:last-child) {
+      margin: 0 0 20px;
+    }
+
+  }
+
+}
+
+.decorative-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include inline-space-reset;
+
+  &-item {
+    display: inline-block;
+    width: (100%/3);
+    height: 5px;
+  }
+
+  &-green {
+    background: $green;
+  }
+
+  &-orange {
+    background: $brand-danger;
+  }
+
+  &-blue {
+    background: $brand-info;
+  }
+
+}
+
+.happy-clients {
+  font-size: 10px;
+  color: $white;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 55px 0;
+  
+  b {
+    font-size: 48px;
+    font-weight: 600;
+    display: block;
+    line-height: 1;
+  }
+
+}

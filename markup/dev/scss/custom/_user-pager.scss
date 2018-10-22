@@ -1,0 +1,71 @@
+.pager {
+  margin: 0;
+  text-align: left;
+  @include inline-space-reset;
+
+  li {
+    @include inline-space(1.8, 14px);
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    vertical-align: top;
+
+    &:not(:last-child) {
+      border-right: 1px solid #e2e6e7;
+      margin-right: 15px;
+    }
+
+    > a,
+    > span {
+      display: inline-block;
+      margin: 0 15px 0 0;
+      padding: 0;
+      background-color: $pager-bg;
+      border: none;
+      border-radius: $pager-border-radius;
+    }
+
+    a {
+
+      &:hover span, &:focus span {
+        background: $brand-danger;
+      }
+
+    }
+
+  }
+
+  .previous, .next {
+
+    span {
+      background: $green;
+      color: $white;
+      border-radius: 50%;
+      font-size: 12px;
+      width: 17px;
+      height: 17px;
+      display: inline-block;
+      text-align: center;
+      line-height: 18px;
+      @include transition(background 0.3s linear);
+    }
+
+  }
+
+  .previous {
+
+    span {
+      margin-right: 10px;
+    }
+
+  }
+
+  .next {
+
+    span {
+      margin-left: 10px;
+    }
+
+  }
+
+}

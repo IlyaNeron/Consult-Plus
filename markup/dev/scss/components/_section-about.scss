@@ -1,0 +1,33 @@
+.section-about {
+
+  .image-block {
+    margin: 0 0 30px;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .achievement-block {
+      position: absolute;
+      right: 24%;
+      top: 60%;
+    }
+
+  }
+
+  .text-block {
+    padding: 0 30px;
+    margin: 0 0 30px;
+
+    p {
+
+      &:not(:last-child) {
+        margin: 0 0 35px;
+      }
+
+    }
+
+  }
+
+}

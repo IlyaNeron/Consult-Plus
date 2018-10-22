@@ -1,0 +1,111 @@
+.section-banner {
+  background-color: $gray-light;
+  position: relative;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  .container {
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 292px;
+      vertical-align: middle;
+    }
+
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .banner-text {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: $third-font-family-sans-serif;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+
+    h1 {
+      margin: 0;
+      z-index: 2;
+      position: relative;
+    }
+
+    .orange-circle {
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: $brand-danger;
+      z-index: 0;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-lg-min) {
+
+  .section-banner {
+
+    h1 {
+      font-size: 34px;
+    }
+
+    .container {
+
+      &:before {
+        height: 250px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .section-banner {
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .container {
+
+      &:before {
+        height: 220px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .section-banner {
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .container {
+
+      &:before {
+        height: 200px;
+      }
+
+    }
+
+  }
+
+}

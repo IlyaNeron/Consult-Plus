@@ -1,0 +1,28 @@
+.item-name {
+  background: $brand-danger;
+  font-family: $font-family-sans-serif;
+  border-radius: 30px;
+  padding: 8px 20px;
+  min-width: 110px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: 2px solid transparent;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 600;
+
+  &-2 {
+    background: transparent;
+    border: 2px solid $brand-danger;
+    padding: 10px 20px;
+    font-size: 13px;
+
+    &-active {
+      border-color: #989fa0;
+    }
+
+  }
+
+}

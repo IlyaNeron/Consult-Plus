@@ -1,0 +1,25 @@
+// ul reset styles
+
+@mixin listreset {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin inline-space-reset {
+  line-height: 0;
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+@mixin inline-space($line-height, $size) {
+  line-height: $line-height;
+  font-size: $size;
+  letter-spacing: normal;
+}
+
+@mixin align-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

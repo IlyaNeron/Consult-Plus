@@ -1,0 +1,60 @@
+h3 {
+  text-transform: uppercase;
+  font-weight: $user-h3-font-weight;
+  font-size: $user-h3-font-size;
+
+  &:not(:last-child) {
+    margin: $user-h3-margin;
+  }
+
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: $user-h4-font-weight;
+  font-size: $user-h4-font-size;
+  font-family: $font-family-sans-serif;
+
+  &:not(:last-child) {
+    margin: $user-h4-margin;
+  }
+
+}
+
+p {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin: 0 0 30px;
+  }
+
+}
+
+blockquote {
+  font-size: $blockquote-font-size;
+  border: none;
+  quotes: none;
+  padding: 0 100px 40px;
+  font-family: $second-font-family-sans-serif;
+  color: $gray-light-blue;
+  line-height: 2;
+  background: $blockquote-bg-color;
+
+  q {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+  }
+
+}
+
+address {
+  margin-bottom: 0;
+}
+
+a {
+  @include transition(0.3s color linear);
+}

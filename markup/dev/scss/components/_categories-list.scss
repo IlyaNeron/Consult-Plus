@@ -1,0 +1,30 @@
+.categories-list {
+  margin: 0 0 55px;
+
+  &:not(:last-child) {
+    margin: 0 0 55px;
+  }
+
+  ul {
+    font-family: $second-font-family-sans-serif;
+    padding-left: 30px;
+
+    li {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      i {
+        position: absolute;
+        left: -30px;
+        top: 0;
+        color: $brand-danger;
+      }
+
+    }
+
+  }
+
+}

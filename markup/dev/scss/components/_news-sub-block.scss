@@ -1,0 +1,20 @@
+.news-sub {
+  text-align: center;
+  padding: 30px 20px 40px 20px;
+  border: 1px solid #d2dbdd;
+  margin: 0 0 50px;
+
+  .btn-default {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .item-head-sm {
+    margin: 0 0 20px;
+  }
+
+  .form-group:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+}

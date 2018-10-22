@@ -1,0 +1,69 @@
+.form-control {
+  padding: $base-input-padding;
+  font-family: $base-input-font-family;
+  @include placeholder(#b5bdbe);
+  @include form-control-focus($brand-danger);
+
+  &:focus {
+    box-shadow: none;
+  }
+
+}
+
+.form-group {
+  position: relative;
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+}
+
+.form-subscribe {
+  font-family: $input-subscribe-font-family;
+  @include placeholder(#5e5e5e);
+  background: $input-subscribe-bg-color;
+  color: $input-subscribe-color;
+  font-size: $input-subscribe-font-size;
+  border-radius: $input-subscribe-border-radius;
+  height: $input-subscribe-height;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  @include form-control-focus($brand-danger);
+  padding: $input-subscribe-padding;
+}
+
+.form-submit {
+  font-family: $input-submit-font-family;
+  @include placeholder($white);
+  background: $input-submit-bg-color;
+  text-transform: uppercase;
+  font-size: $input-submit-font-size;
+  padding: $input-submit-padding;
+  color: $input-submit-color;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #48c5e8;
+  transition: color 0.3s linear, border-color 0.3s linear;
+
+  &:focus {
+    border-color: $brand-danger;
+  }
+
+}
+
+textarea {
+  resize: none;
+  min-height: 140px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-textarea-lg {
+  min-height: 550px;
+}

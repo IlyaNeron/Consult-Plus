@@ -1,0 +1,41 @@
+blockquote {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    width: 20px;
+    height: 2px;
+    background: $white;
+  }
+
+  q {
+
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 70px;
+      height: 50px;
+      background: url('../img/icon-quote.png') no-repeat;
+    }
+
+    &:after {
+      right: 0;
+      left: initial;
+      background: url('../img/icon-quote-2.png') no-repeat;
+    }
+
+  }
+
+  cite {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: normal;
+    font-family: $font-family-sans-serif;
+  }
+
+}

@@ -1,0 +1,110 @@
+.achievement-block {
+  position: relative;
+  box-shadow: 0px 9px 16px 0px rgba(154, 154, 154, 0.3);
+  z-index: 2;
+  background: $brand-info;
+  padding: 15px;
+  border: 6px solid $white;
+  min-width: 235px;
+
+  &-content {
+    text-align: center;
+    border: 1px solid #35c5ec;
+    padding: 100px 25px 25px;
+    text-transform: uppercase;
+    position: relative;
+
+    h3 {
+      color: $white;
+      font-size: 10px;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin: 0 0 30px;
+      }
+
+      b {
+        display: block;
+        font-size: 75px;
+      }
+
+    }
+
+  }
+
+  .achievement-block-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-quote {
+    max-width: 360px;
+    padding: 20px;
+
+    .achievement-block-content {
+      padding: 30px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+    }
+
+    blockquote {
+      text-transform: initial;
+      padding: 35px 0 0;
+
+      q {
+
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+
+        &:after, &:before {
+          color: $white;
+          background-image: url('../img/icon-quote-5.png');
+          width: 23px;
+          height: 20px;
+        }
+
+        &:after {
+          top: 0;
+          left: 0;
+        }
+
+        &:before {
+          right: 0;
+          bottom: 20px;
+          left: auto;
+          top: auto;
+          background-image: url('../img/icon-quote-6.png');
+        }
+
+      }
+
+      &:after {
+        content: none;
+      }
+
+    }
+
+  }
+
+}
+
+.content-wrapper {
+  position: relative;
+
+  .achievement-block {
+    position: absolute;
+    right: 0;
+  }
+
+}

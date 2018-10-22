@@ -1,0 +1,59 @@
+.header-main {
+
+  .navigation {
+    text-transform: uppercase;
+    padding: 10px 0 0;
+
+    @media (min-width: $grid-float-breakpoint) {
+      float: right;
+    }
+
+    li {
+      font-weight: 600;
+
+      &:not(:last-child) {
+        padding-right: 30px;
+      }
+
+      a {
+        @include transition(color 0.3s linear);
+        padding: 0;
+      }
+
+    }
+
+  }
+
+  .navigation-collapse {
+    padding: 0;
+  }
+
+}
+
+.navbar-toggle {
+
+  .icon-bar {
+    background: $gray-dark;
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .header-main {
+
+    .navigation {
+
+      li {
+
+        &:not(:last-child) {
+          padding: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+}

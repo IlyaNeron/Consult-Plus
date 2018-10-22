@@ -1,0 +1,69 @@
+.table {
+
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+
+    > tr {
+
+      > th,
+      > td {
+        padding: $table-cell-padding;
+        vertical-align: middle;
+        font-size: $table-font-size;
+        text-transform: uppercase;
+        color: $gray-medium;
+        font-weight: $table-font-weight;
+        position: relative;
+        border: none;
+      }
+
+    }
+
+  }
+
+}
+
+tr, th {
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $table-border-color;
+  }
+
+}
+
+.table-responsive {
+
+  @media screen and (max-width: $screen-xs-max) {
+    border: 1px solid transparent;
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .table {
+
+    > thead,
+    > tbody,
+    > tfoot {
+  
+      > tr {
+  
+        > th,
+        > td {
+          padding: 20px;
+        }
+  
+      }
+  
+    }
+
+    td:first-child {
+      padding-left: 50px;
+    }
+  
+  }
+
+}

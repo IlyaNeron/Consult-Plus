@@ -1,0 +1,47 @@
+.share {
+  float: right;
+
+  &-text {
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  time {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 13px;
+    border-right: 1px solid #dbdbdb;
+    margin-right: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+  }
+
+  &-button {
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #d9e1e2;
+    border-radius: 50%;
+    vertical-align: middle;
+    background: $white;
+    z-index: 6;
+    cursor: pointer;
+    transition: color 0.3s linear, background 0.3s linear;
+
+    > i {
+      @include align-item;
+    }
+
+    &:hover {
+      background: $brand-danger;
+      color: $white;
+    }
+
+  }
+
+}
+

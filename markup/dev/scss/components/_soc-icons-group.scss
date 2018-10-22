@@ -1,0 +1,29 @@
+.soc-icons-group {
+  @include inline-space-reset;
+  border: 1px solid #d2dbdd;
+  border-radius: 30px;
+  padding: 0 30px;
+  margin: 0;
+  height: 43px;
+  background: $white;
+
+  &:not(:last-child) {
+    margin: 0 0 15px;
+  }
+
+  li {
+    display: inline-block;
+    @include inline-space(1.8, 16px);
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    a {
+      display: block;
+      padding: 6px 0;
+    }
+
+  }
+
+}

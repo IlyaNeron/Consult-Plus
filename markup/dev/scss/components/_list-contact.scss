@@ -1,0 +1,72 @@
+.list-contact {
+  @include listreset;
+  @include inline-space-reset;
+  text-transform: uppercase;
+  float: right;
+
+  li {
+    @include inline-space(1, 12px);
+    color: $white;
+    position: relative;
+    padding: 0;
+
+    &:not(:last-child) {
+      padding-right: 50px;
+    }
+
+    &:not(:last-child):after {
+      content: '';
+      position: absolute;
+      top: -100%;
+      bottom: -100%;
+      right: 25px;
+      width: 1px;
+      background: #505253;
+    }
+
+  }
+
+  span {
+
+    .mail, .tel {
+      @include transition(color 0.3s linear);
+
+      &:hover {
+        color: $brand-danger;
+      }
+
+    }
+
+    .mail {
+      color: #727779;
+    }
+
+    .tel {
+      color: #a2a5a6;
+    }
+
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .list-contact {
+    float: none;
+
+    li {
+      display: block;
+
+      &:not(:last-child) {
+        padding: 0 0 10px;
+      }
+
+      &:not(:last-child):after {
+        content: none;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,64 @@
+.main-menu {
+  max-width: 460px;
+  z-index: 2;
+  position: relative;
+  margin-top: -675px;
+
+  &-head {
+    background: $brand-danger;
+    padding: 32px 35px;
+
+    h2, h3 {
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin: 0 0 10px;
+      }
+
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 29px;
+      font-weight: 300;
+
+      &:not(:last-child) {
+        margin: 0 0 15px;
+      }
+
+    }
+
+  }
+
+  &-item {
+    color: $white;
+    padding: 35px 20px;
+    display: inline-block;
+    border: 1px solid #00a6d3;
+    width: 50%;
+    vertical-align: top;
+
+    .icon-block {
+      color: $white;
+      margin: 0 0 10px;
+    }
+
+    h3 {
+      color: $white;
+      font-size: 14px;
+    }
+
+  }
+
+  &-wrapper {
+    @include clearfix;
+    background: $brand-info;
+    @include inline-space-reset;
+  }
+
+}

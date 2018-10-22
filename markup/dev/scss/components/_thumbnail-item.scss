@@ -1,0 +1,27 @@
+.thumbnail-item {
+  font-family: $second-font-family-sans-serif;
+  @include transition(color 0.3s linear);
+
+  i {
+    @include transition(color 0.3s linear);
+    color: $black;
+  }
+
+  &:hover i {
+    color: $brand-danger;
+  }
+
+  b {
+    font-size: 18px;
+    color: $btn-default-bg;
+    line-height: 1;
+    margin: 0 0 15px;
+    display: block;
+    font-family: $font-family-sans-serif;
+  }
+
+  h3 {
+    font-family: $font-family-sans-serif;
+  }
+
+}

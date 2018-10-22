@@ -1,0 +1,89 @@
+.team-item {
+  margin: 0 0 30px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: $brand-danger;
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+  }
+
+  .hover-text {
+    opacity: 0;
+    visibility: hidden;
+    color: $white;
+    text-align: center;
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+
+    h3 {
+      font-weight: 400;
+      color: $white;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+
+    b {
+      display: block;
+    }
+
+  }
+
+  .social-links {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+    z-index: 2;
+
+    li {
+
+      a {
+        color: $black;
+        font-weight: 600;
+      }
+
+    }
+
+  }
+
+  &:hover {
+  
+    & .social-links {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    & .hover-text {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &:after {
+      opacity: 0.8;
+      visibility: visible;
+    }
+
+  }
+
+}

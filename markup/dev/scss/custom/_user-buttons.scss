@@ -1,0 +1,64 @@
+.btn {
+  min-width: $btn-min-width;
+  text-transform: $btn-text-transform;
+  @include transition(background 0.3s linear);
+  position: relative;
+  padding: $base-btn-padding;
+  line-height: $btn-line-height;
+  font-size: $btn-font-size;
+
+  &-default {
+
+    &:hover {
+      background-color: $btn-bg-hover-color;
+    }
+
+    &-sm {
+      padding: 7px 20px;
+      min-width: 80px;
+    }
+
+  }
+
+  &:active,
+  &.active {
+    @include box-shadow(none);
+  }
+
+}
+
+.btn:focus,
+.btn.focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active:focus,
+.btn.active.focus {
+  outline: none;
+  background: $brand-danger;
+}
+
+.button-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: none;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: auto;
+  @include transition(color 0.3s linear);
+
+  &:hover {
+    color: $brand-danger;
+  }
+
+}
+
+@media (max-width: $screen-xs-min) {
+
+  .btn {
+    width: 100%;
+  }
+
+}

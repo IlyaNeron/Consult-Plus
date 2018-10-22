@@ -1,0 +1,179 @@
+.form-item-mail {
+  font-family: $second-font-family-sans-serif;
+  padding-right: 45px;
+
+  h3 {
+    font-family: $font-family-sans-serif;
+  }
+
+  .text-block {
+    margin: 0 0 40px;
+    max-width: 400px;
+  }
+
+  .btn-default {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base;
+  }
+
+  .form-group {
+    margin: 0 0 30px;
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .form-item-mail {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .form-item-mail {
+    text-align: center;
+
+    h3 {
+
+      &:not(:last-child) {
+        margin: 0 0 20px;
+      }
+
+    }
+
+    .text-block {
+      margin: 0 auto 20px;
+    }
+
+    .btn-default {
+      position: relative;
+      width: 100%;
+    }
+
+    .form-subscribe {
+      margin: 0 0 15px;
+    }
+
+    input {
+      padding: 20px 30px;
+    }
+
+  }
+
+}
+
+.form-item-submit {
+  background: $brand-info;
+  padding: 30px 30px 25px;
+
+  .item-head-light {
+
+    h3 {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+  }
+
+  .btn-default {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .form-group {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+
+}
+
+.form-item-select {
+
+  .select-name {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: $gray-medium;
+    padding-right: 45px;
+  }
+
+  select {
+    cursor: pointer;
+    font-family: $font-family-sans-serif;
+    padding: 12px 15px;
+    min-width: 260px;
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 13px;
+  }
+
+  .select-wrapper {
+
+    &:before {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}
+
+.form-item-search {
+  margin: 0 0 60px;
+
+  h3 {
+    margin: 0;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 600;
+
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+
+  }
+
+}
+
+.form-item-message {
+
+  .form-group {
+    margin: 0 0 30px;
+
+    .form-submit {
+      color: $black;
+      @include placeholder($gray-medium);
+      border-color: #cddbde;
+      @include transition(border-color 0.3s linear);
+
+      &:focus {
+        border-color: $brand-danger;
+      }
+
+    }
+
+  }
+
+}
+
+.form-item-application {
+
+  .form-group {
+
+    .form-submit {
+      font-size: 12px;
+    }
+
+  }
+
+}

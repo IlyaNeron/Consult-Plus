@@ -1,0 +1,46 @@
+.contact-block {
+  padding: 40px 30px;
+  display: block;
+  font-family: $second-font-family-sans-serif;
+  color: $gray-medium;
+  border: 1px solid $gray-light;
+  transition: color 0.3s linear, border-color 0.3s linear;
+  margin-bottom: 30px;
+  @include clearfix;
+
+  &:hover {
+    border-color: $brand-danger;
+  }
+
+  i {
+    float: left;
+    font-size: 60px;
+    padding-right: 40px;
+  }
+
+  .contact-text {
+    float: right;
+    width: 65%;
+  }
+
+  h3 {
+    font-family: $font-family-sans-serif;
+
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+
+  }
+
+  span {
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+
+  }
+
+}

@@ -1,0 +1,21 @@
+.modal-header {
+
+  .close {
+    margin: 0;
+    float: none;
+    position: absolute;
+    right: -27px;
+    top: -27px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 40px;
+    background: $brand-danger;
+    opacity: 1;
+    color: $white;
+    font-weight: 400;
+    outline: none;
+    z-index: 2;
+  }
+
+}

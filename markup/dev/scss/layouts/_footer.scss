@@ -1,0 +1,38 @@
+.footer {
+  background: $gray-dark;
+
+  &-inner {
+    padding: 20px 0 50px;
+    border-top: 1px solid #323334;
+  }
+
+}
+
+.copyright {
+  font-family: $second-font-family-sans-serif;
+}
+
+@media (max-width: $screen-md-min) {
+
+  .footer {
+
+    &-inner {
+      padding: 20px 0 20px;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .footer {
+
+    &-inner {
+      text-align: center;
+      padding: 15px 0 15px;
+    }
+
+  }
+
+}
