@@ -20,7 +20,6 @@
 
   .contact-text {
     float: right;
-    width: 65%;
   }
 
   h3 {
@@ -39,6 +38,72 @@
 
     &:not(:last-child) {
       margin: 0 0 10px;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-lg-min) {
+
+  .contact-block {
+    padding: 30px 25px;
+
+    i {
+      padding-right: 20px;
+      font-size: 50px;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .contact-block {
+    padding: 30px 25px;
+    text-align: center;
+
+    i {
+      padding: 0;
+      display: block;
+      margin: 0 0 15px;
+      float: none;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    .contact-text {
+      float: none;
+      text-align: left;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .contact-block {
+    padding: 30px 25px;
+    text-align: center;
+
+    .contact-text {
+      text-align: center;
     }
 
   }

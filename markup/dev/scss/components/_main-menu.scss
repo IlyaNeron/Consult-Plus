@@ -1,9 +1,8 @@
 .main-menu {
   max-width: 460px;
   z-index: 2;
-  position: relative;
-  margin-top: -675px;
-  display: none;
+  position: absolute;
+  bottom: 0;
 
   &-head {
     background: $brand-danger;
@@ -47,11 +46,18 @@
     .icon-block {
       color: $white;
       margin: 0 0 10px;
+
+      i {
+        display: block;
+        font-size: 40px;
+      }
+
     }
 
     h3 {
       color: $white;
       font-size: 14px;
+      margin: 0;
     }
 
   }
