@@ -1,6 +1,5 @@
 .table {
 
-  // Cells
   > thead,
   > tbody,
   > tfoot {
@@ -9,7 +8,6 @@
 
       > th,
       > td {
-        padding: $table-cell-padding;
         vertical-align: middle;
         font-size: $table-font-size;
         text-transform: uppercase;

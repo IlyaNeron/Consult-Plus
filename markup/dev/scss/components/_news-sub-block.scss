@@ -18,3 +18,27 @@
   }
 
 }
+
+@media (max-width: $screen-lg-min) {
+
+  .news-sub {
+    margin: 0 0 40px;
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .news-sub {
+    margin: 0 0 30px;
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .news-sub {
+    margin: 0 0 20px;
+  }
+
+}

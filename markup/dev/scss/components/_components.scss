@@ -105,12 +105,6 @@
 
 }
 
-.button-wrapper {
-  padding: 50px 0 30px;
-  position: relative;
-  border-top: 1px solid #dee8eb;
-}
-
 .icon-block {
   font-size: 45px;
   margin: 0 0 30px;
@@ -150,18 +144,6 @@
     padding: 5px 15px;
     font-size: 18px;
     font-weight: 700;
-  }
-
-}
-
-.side-block-wrapper {
-
-  h3 {
-
-    &:not(:last-child) {
-      margin: 0 0 20px;
-    }
-
   }
 
 }
@@ -208,4 +190,25 @@
     line-height: 1;
   }
 
+}
+
+@media (max-width: $screen-lg-min) {
+
+  .blog-text {
+
+    .blog-date {
+      font-size: 12px;
+    }
+
+    .blog-name {
+      font-size: 15px;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  
 }

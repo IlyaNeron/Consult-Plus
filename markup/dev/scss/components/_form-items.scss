@@ -177,3 +177,27 @@
   }
 
 }
+
+@media (max-width: $screen-lg-min) {
+
+  .form-item-search {
+    margin: 0 0 50px;
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .form-item-search {
+    margin: 0 0 40px;
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .form-item-search {
+    margin: 0 0 30px;
+  }
+
+}

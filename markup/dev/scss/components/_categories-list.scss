@@ -7,7 +7,8 @@
 
   ul {
     font-family: $second-font-family-sans-serif;
-    padding-left: 30px;
+    padding: 0 0 0 30px;
+    margin: 0;
 
     li {
       position: relative;
@@ -23,6 +24,45 @@
         color: $brand-danger;
       }
 
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-lg-min) {
+
+  .categories-list {
+    margin: 0 0 40px;
+
+    &:not(:last-child) {
+      margin: 0 0 40px;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .categories-list {
+    margin: 0 0 30px;
+
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .categories-list {
+    margin: 0 0 20px;
+
+    &:not(:last-child) {
+      margin: 0 0 20px;
     }
 
   }
