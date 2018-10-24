@@ -1,0 +1,76 @@
+.item {
+
+  &-service {
+    margin: 0 20px 45px 0;
+
+    .icon-block {
+      margin: 0 0 40px;
+
+      i {
+        @include transition(color 0.3s linear);
+      }
+
+      &:hover i {
+        color: $brand-danger;
+      }
+
+    }
+
+    .description-block {
+      margin: 0;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-lg-min) {
+
+  .item {
+
+    &-service {
+      margin: 0 15px 35px 0;
+
+      .icon-block {
+        margin: 0 0 30px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .item {
+
+    &-service {
+      margin: 0 0 25px;
+
+      .icon-block {
+        margin: 0 0 25px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .item {
+
+    &-service {
+      margin: 0 0 15px;
+
+      .icon-block {
+        margin: 0 0 20px;
+      }
+
+    }
+
+  }
+
+}

@@ -31,3 +31,39 @@
   }
 
 }
+
+@media (max-width: $screen-md-min) {
+
+  .section-about {
+
+    .image-block {
+
+      .achievement-block {
+        right: 10%;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .section-about {
+
+    .image-block {
+
+      img {
+        margin: 0 0 25px;
+      }
+
+      .achievement-block {
+        position: static;
+      }
+
+    }
+
+  }
+
+}

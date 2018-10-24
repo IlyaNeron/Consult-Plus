@@ -1,0 +1,100 @@
+.item {
+
+  &-team {
+    border: 1px solid $gray-light-2;
+
+    .item-image {
+      margin: 0 0 45px;
+    }
+
+    .item-description {
+      padding: 0 45px;
+      margin: 0 0 45px;
+
+      p:not(:last-child) {
+        margin: 0 0 60px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-lg-min) {
+
+  &-team {
+
+    .item-image {
+      margin: 0 0 30px;
+    }
+
+    .item-description {
+      padding: 0 30px;
+      margin: 0 0 30px;
+
+      p {
+
+        &:not(:last-child) {
+          margin: 0 0 40px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  &-team {
+
+    .item-image {
+      margin: 0 0 25px;
+    }
+
+    .item-description {
+      padding: 0 25px;
+      margin: 0 0 25px;
+
+      p {
+
+        &:not(:last-child) {
+          margin: 0 0 30px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  &-team {
+
+    .item-image {
+      margin: 0 0 15px;
+    }
+
+    .item-description {
+      padding: 0 15px;
+      margin: 0 0 15px;
+
+      p {
+
+        &:not(:last-child) {
+          margin: 0 0 15px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

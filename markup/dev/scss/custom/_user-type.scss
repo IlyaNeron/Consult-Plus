@@ -58,3 +58,19 @@ address {
 a {
   @include transition(0.3s color linear);
 }
+
+@media (max-width: $screen-sm-min) {
+
+  blockquote {
+    padding: $blockquote-sm-padding;
+  }
+
+}
+
+@media (max-width: $screen-xs-min) {
+
+  blockquote {
+    padding: $blockquote-xs-padding;
+  }
+
+}

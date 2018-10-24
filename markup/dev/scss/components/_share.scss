@@ -30,7 +30,8 @@
     background: $white;
     z-index: 6;
     cursor: pointer;
-    transition: color 0.3s linear, background 0.3s linear;
+    transition: color 0.3s linear, background 0.3s linear, border-color 0.3s linear;
+    font-size: 20px;
 
     > i {
       @include align-item;
@@ -39,6 +40,7 @@
     &:hover {
       background: $brand-danger;
       color: $white;
+      border-color: transparent;
     }
 
   }

@@ -39,3 +39,32 @@ blockquote {
   }
 
 }
+
+@media (max-width: $screen-sm-min) {
+
+  blockquote {
+
+    &:after {
+      left: auto;
+    }
+
+    q {
+
+      &:after, &:before {
+        width: 23px;
+        height: 20px;
+      }
+
+      &:after {
+        background: url('../img/icon-quote-6.png') no-repeat;
+      }
+
+      &:before {
+        background: url('../img/icon-quote-5.png') no-repeat;
+      }
+
+    }
+
+  }
+
+}

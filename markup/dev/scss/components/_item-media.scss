@@ -1,0 +1,53 @@
+.item {
+
+    &-media {
+      padding-right: 35px;
+
+      .image-block {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 40px;
+      }
+
+    }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .item {
+
+    &-media {
+      padding-right: 0;
+      margin: 0 0 20px;
+
+      .image-block {
+        margin: 0 0 20px;
+      }
+
+      .description-block {
+        margin: 0;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .item {
+
+    &-media {
+      text-align: center;
+
+      .image-block {
+        margin: 0 0 15px;
+      }
+
+    }
+
+  }
+
+}

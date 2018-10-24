@@ -26,8 +26,56 @@
 
     .item {
 
-      img {
-        width: 100%;
+      &-slide {
+        margin: 0;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .section-carousel {
+
+    .carousel {
+
+      &-control {
+        height: 80px;
+      }
+
+      .item {
+
+        img {
+          min-height: 250px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-xs-min) {
+
+  .section-carousel {
+
+    .carousel {
+
+      &-control {
+        height: 50px;
+      }
+
+      .item {
+
+        img {
+          min-height: 200px;
+        }
+
       }
 
     }

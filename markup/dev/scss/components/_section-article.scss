@@ -14,9 +14,41 @@
   right: 0;
   top: 0;
   bottom: 0;
+  overflow: hidden;
 
   img {
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+}
+
+@media (max-width: $screen-lg-min) {
+}
+
+@media (max-width: $screen-md-min) {
+
+  .section-article {
+
+    .news-block {
+      padding: 0;
+    }
+
+  }
+
+  .section-image {
+    position: relative;
+    width: 100%;
+
+    img {
+      transform: none;
+      position: static;
+    }
+
   }
 
 }

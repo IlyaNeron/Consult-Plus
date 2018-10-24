@@ -19,7 +19,7 @@
   }
 
   .contact-text {
-    float: right;
+    overflow: hidden;
   }
 
   h3 {
@@ -90,6 +90,7 @@
     .contact-text {
       float: none;
       text-align: left;
+      overflow: visible;
     }
 
   }
