@@ -193,6 +193,22 @@
 
 }
 
+.arrow-button {
+  font-size: 12px;
+  border: 1px solid #7de2ff;
+  color: #7de2ff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  transition: color 0.3s linear, border-color 0.3s linear;
+
+  i {
+    @include align-item;
+  }
+
+}
+
 @media (max-width: $screen-lg-min) {
 
   .blog-text {

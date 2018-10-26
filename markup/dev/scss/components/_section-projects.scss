@@ -5,3 +5,27 @@
   }
 
 }
+
+@media (max-width: $screen-md-min) {
+
+  .section-projects {
+
+    .row {
+      padding: 0 0 20px;
+    }
+  
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .section-projects {
+
+    .row {
+      padding: 0;
+    }
+  
+  }
+
+}
