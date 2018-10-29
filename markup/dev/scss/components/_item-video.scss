@@ -23,7 +23,7 @@
       vertical-align: top;
       display: inline-block;
       width: 50%;
-      padding: 40px 30px;
+      padding: 0 30px;
       margin: 0;
 
       p:not(:last-child) {
@@ -38,29 +38,37 @@
 
 @media (max-width: $screen-md-min) {
 
-  &-video {
-    margin-bottom: 25px;
+  .item {
+
+    &-video {
+      margin-bottom: 25px;
+    }
+
   }
 
 }
 
 @media (max-width: $screen-sm-min) {
 
-  &-video {
-    flex-direction: column;
+  .item {
 
-    .item-image {
-      width: 100%;
+    &-video {
+      flex-direction: column;
 
-      img {
-        height: 100%;
+      .item-image {
+        width: 100%;
+
+        img {
+          height: 100%;
+        }
+
       }
 
-    }
+      .item-description {
+        width: 100%;
+        padding: 25px 15px;
+      }
 
-    .item-description {
-      width: 100%;
-      padding: 25px 15px;
     }
 
   }
