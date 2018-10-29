@@ -3,7 +3,6 @@
   z-index: 2;
   position: absolute;
   bottom: 0;
-  left: 20%;
 
   &-head {
     background: $brand-danger;
@@ -161,6 +160,10 @@
       padding: 20px 15px;
     }
 
+  }
+
+  .main-menu-wrapper {
+    padding: 0;
   }
 
 }

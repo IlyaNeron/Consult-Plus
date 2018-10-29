@@ -42,43 +42,6 @@
       background: $brand-danger;
       color: $white;
       border-color: transparent;
-      overflow: visible;
-
-      & .social-drop {
-        transform: translateX(0);
-        visibility: visible;
-      }
-
-    }
-
-  }
-
-  .social-drop {
-    @include inline-space-reset;
-    margin: 0;
-    border: 1px solid $gray-light-3;
-    border-radius: 30px;
-    position: absolute;
-    padding: 10px 50px 10px 25px;
-    top: 0;
-    bottom: 0;
-    color: $gray;
-    min-width: 155px;
-    transform: translateX(100%);
-    visibility: hidden;
-    right: 0;
-    background: $white;
-    transition: transform 0.3s linear, visibility 0.3s linear;
-
-    li {
-      display: inline-block;
-      @include inline-space(1, 20px);
-      width: (100%/3);
-
-      &:not(:last-child) {
-        padding-right: 15px;
-      }
-
     }
 
   }

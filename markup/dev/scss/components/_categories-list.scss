@@ -13,6 +13,16 @@
     li {
       position: relative;
 
+      a {
+        color: $gray;
+        display: block;
+
+        &:hover {
+          color: $brand-danger;
+        }
+
+      }
+
       &:not(:last-child) {
         margin-bottom: 15px;
       }
