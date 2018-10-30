@@ -21,22 +21,20 @@
 @import 'components/section-about';
 @import 'components/item-head';
 @import 'components/achievement-block';
-@import 'components/section-thumbnail';
 @import 'components/thumbnail-item';
 @import 'components/section-projects';
 @import 'components/categories-item';
-@import 'components/section-clients';
 @import 'components/carousel-reviews';
 @import 'components/blockquote';
 @import 'components/section-article';
 @import 'components/article';
 @import 'components/contact-block';
-@import 'components/address';
+@import 'components/aside';
 @import 'components/list-item';
 @import 'components/form-items';
 @import 'components/block-error';
 @import 'components/section-banner';
-@import 'components/items';
+@import 'components/item-project';
 @import 'components/item-name';
 @import 'components/industries-item';
 @import 'components/description-block';
@@ -51,7 +49,6 @@
 @import 'components/share';
 @import 'components/audio-bar';
 @import 'components/popup';
-@import 'components/item-description';
 @import 'components/item-list';
 @import 'components/color-name';
 @import 'components/item-team';
@@ -65,6 +62,12 @@
 @import 'components/item-post';
 @import 'components/item-tags';
 @import 'components/item-comment';
+@import 'components/image-block';
+@import 'components/item-details';
+@import 'components/item-business';
+@import 'components/item-description';
+@import 'components/item-about';
+@import 'components/item-offer';
 
 // vendors
 @import 'vendors/icomoon';

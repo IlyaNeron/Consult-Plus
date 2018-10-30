@@ -1,0 +1,27 @@
+.item-about {
+  margin: 0 0 90px;
+}
+
+@media (max-width: $screen-lg-min) {
+
+  .item-about {
+    margin: 0 0 70px;
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .item-about {
+    margin: 0 0 50px;
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .item-about {
+    margin: 0 0 25px;
+  }
+
+}

@@ -1,4 +1,34 @@
 .section-bottom {
   width: 100%;
   text-align: center;
+
+  &-border {
+    border-bottom: 1px solid #dbe4e4;
+    padding: 0 0 90px;
+  }
+
+}
+
+@media (max-width: $screen-lg-min) {
+
+  .section-bottom-border {
+    padding: 0 0 60px;
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .section-bottom-border {
+    padding: 0 0 40px;
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .section-bottom-border {
+    padding: 0 0 20px;
+  }
+
 }

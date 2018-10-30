@@ -1,77 +1,65 @@
-.item {
+.item-comment {
+  position: relative;
+  @include clearfix;
+  margin: 0 0 55px;
 
-  &-comment {
-    position: relative;
-    @include clearfix;
-    margin: 0 0 55px;
+  .image-block {
+    float: left;
+    margin: 0 30px 0 0;
 
-    .item-image {
-      float: left;
-      margin: 0 30px 0 0;
-
-      img {
-        width: auto;
-        max-width: 98px;
-        border-radius: 50%;
-        max-height: 98px;
-        height: 100%;
-      }
-
+    img {
+      width: auto;
+      max-width: 98px;
+      border-radius: 50%;
+      max-height: 98px;
+      height: 100%;
     }
 
-    .description-block {
-      overflow: hidden;
-      margin: 5px 0;
+  }
 
-      h3 {
-        display: inline-block;
-        font-size: 14px;
-        vertical-align: top;
-      }
+  .description-block {
+    overflow: hidden;
+    margin: 5px 0;
 
+    h3 {
+      display: inline-block;
+      font-size: 14px;
+      vertical-align: top;
     }
 
-    .btn-default {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+  }
 
-    &-sub {
-      padding-left: 98px;
-    }
+  .btn-default {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
+  &-sub {
+    padding-left: 98px;
   }
 
 }
 
 @media (max-width: $screen-lg-min) {
 
-  .item {
-
-    &-comment {
-      margin: 0 0 40px;
-    }
-
+  .item-comment {
+    margin: 0 0 40px;
   }
 
 }
 
 @media (max-width: $screen-md-min) {
 
-  .item {
+  .item-comment {
+    margin: 0 0 20px;
 
-    &-comment {
-      margin: 0 0 20px;
+    .image-block {
+      margin-right: 15px;
+    }
 
-      .item-image {
-        margin-right: 15px;
-      }
-
-      &-sub {
-        padding-left: 50px;
-      }
-
+    &-sub {
+      padding-left: 50px;
     }
 
   }
@@ -80,28 +68,24 @@
 
 @media (max-width: $screen-sm-min) {
 
-  .item {
+  .item-comment {
+    margin: 0 0 20px;
 
-    &-comment {
+    .image-block {
+      float: none;
       margin: 0 0 20px;
+    }
 
-      .item-image {
-        float: none;
-        margin: 0 0 20px;
-      }
+    .description-block {
+      margin: 0;
+    }
 
-      .description-block {
-        margin: 0;
-      }
+    .btn-default {
+      width: auto;
+    }
 
-      .btn-default {
-        width: auto;
-      }
-
-      &-sub {
-        padding-left: 70px;
-      }
-
+    &-sub {
+      padding-left: 70px;
     }
 
   }

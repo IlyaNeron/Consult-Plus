@@ -25,26 +25,18 @@
 			</div>
 			<div class="header-main">
 				<div class="container">
-					<nav class="navbar">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<div class="logo pull-left">
-								<a href="index.html" class="show">
-									<img src="./img/logo.png" alt="Onsult Plus" class="img-responsive" width="149" height="42">
-								</a>
-							</div>
-						</div>
-						<div class="collapse navbar-collapse navigation-collapse" id="myNavbar">
-							<ul class="nav navbar-nav navigation">
+					<div class="logo pull-left">
+						<a href="index.html"><img src="./img/logo.png" alt="Onsult Plus" class="img-responsive" width="149" height="42"></a>
+					</div>
+					<nav class="nav">
+						<a href="#" class="nav-opener"><span></span></a>
+						<div class="nav-drop">
+							<ul class="nav-menu">
 								<li class="active"><a href="#">home</a></li>
-								<li><a href="404.html">about us</a></li>
-								<li><a href="industry.html">industry</a></li>
+								<li><a href="#">about us</a></li>
+								<li><a href="#">industry</a></li>
 								<li><a href="#">services</a></li>
-								<li><a href="pages.html">pages</a></li>
+								<li><a href="#">pages</a></li>
 								<li><a href="#">contact us</a></li>
 							</ul>
 						</div>
@@ -55,9 +47,10 @@
 		<main class="main">
 			<section class="section-banner" style="background-image: url('./img/section-image-2.png')">
 				<div class="container">
-					<div class="banner-text">
-						<span class="orange-circle"></span>
-						<h1>blog post</h1>
+					<div class="banner-wrapper">
+						<div class="text-banner">
+							<h1>blog post</h1>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -73,8 +66,8 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<div class="item item-blog">
-										<div class="item-image">
+									<div class="item-blog">
+										<div class="image-block">
 											<img src="./img/content-image-60.png" alt="Image Description" width="848" height="355">
 											<div class="blog-text">
 												<time datetime="2016-02-11" class="blog-date">11-feb-2016</time>
@@ -92,16 +85,12 @@
 												<li><i>&#10004;</i>Aliquam eget ex et velit facilisis dignissim.</li>
 											</ul>
 										</div>
-										<div class="row item-post-sm">
-											<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-												<div class="item-image">
-													<img src="./img/content-image-68.png" alt="Image Description" width="358" height="184">
-												</div>
+										<div class="item-post-sm">
+											<div class="image-block">
+												<img src="./img/content-image-68.png" alt="Image Description" width="358" height="184">
 											</div>
-											<div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
-												<div class="item-description">
-													<p>Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-												</div>
+											<div class="description-block">
+												<p>Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 											</div>
 										</div>
 										<div class="item-blog-bottom">
@@ -118,8 +107,8 @@
 									<h3>related post</h3>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-									<a href="#" class="item item-post item-post-related">
-										<div class="item-image">
+									<a href="#" class="item-post item-post-related">
+										<div class="image-block">
 											<img src="./img/content-image-61.png" alt="Image Description" width="263" height="165">
 										</div>
 										<div class="description-block">
@@ -129,8 +118,8 @@
 									</a>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-									<a href="#" class="item item-post item-post-related">
-										<div class="item-image">
+									<a href="#" class="item-post item-post-related">
+										<div class="image-block">
 											<img src="./img/content-image-62.png" alt="Image Description" width="263" height="165">
 										</div>
 										<div class="description-block">
@@ -140,8 +129,8 @@
 									</a>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-									<a href="#" class="item item-post item-post-related">
-										<div class="item-image">
+									<a href="#" class="item-post item-post-related">
+										<div class="image-block">
 											<img src="./img/content-image-63.png" alt="Image Description" width="263" height="165">
 										</div>
 										<div class="description-block">
@@ -157,8 +146,8 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-xs-12 col-md-12 col-lg-12">
-									<div class="item item-comment">
-										<div class="item-image">
+									<div class="item-comment">
+										<div class="image-block">
 											<img src="./img/content-image-64.png" alt="Image Description" width="98" height="98">
 										</div>
 										<div class="description-block">
@@ -169,8 +158,8 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-xs-12 col-md-12 col-lg-12">
-									<div class="item item-comment item-comment-sub">
-										<div class="item-image">
+									<div class="item-comment item-comment-sub">
+										<div class="image-block">
 											<img src="./img/content-image-65.png" alt="Image Description" width="98" height="98">
 										</div>
 										<div class="description-block">
@@ -181,8 +170,8 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-xs-12 col-md-12 col-lg-12">
-									<div class="item item-comment">
-										<div class="item-image">
+									<div class="item-comment">
+										<div class="image-block">
 											<img src="./img/content-image-66.png" alt="Image Description" width="98" height="98">
 										</div>
 										<div class="description-block">
@@ -193,8 +182,8 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-xs-12 col-md-12 col-lg-12">
-									<div class="item item-comment">
-										<div class="item-image">
+									<div class="item-comment">
+										<div class="image-block">
 											<img src="./img/content-image-67.png" alt="Image Description" width="98" height="98">
 										</div>
 										<div class="description-block">
@@ -231,8 +220,8 @@
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 									<h3>featured post</h3>
-									<a href="#" class="item item-post item-post-featured">
-										<div class="item-image">
+									<a href="#" class="item-post item-post-featured">
+										<div class="image-block">
 											<img src="./img/content-image-56.png" alt="Image Description" width="262" height="85">
 										</div>
 										<div class="description-block">
@@ -242,7 +231,7 @@
 									</a>
 									<a href="#" class="item item-post item-post-featured">
 										<h3>featured post</h3>
-										<div class="item-image">
+										<div class="image-block">
 											<img src="./img/content-image-57.png" alt="Image Description" width="262" height="85">
 										</div>
 										<div class="description-block">
@@ -250,9 +239,9 @@
 											<time datetime="2016-02-11">11-feb-2016</time>
 										</div>
 									</a>
-									<a href="#" class="item item-post item-post-featured">
+									<a href="#" class="item-post item-post-featured">
 										<h3>featured post</h3>
-										<div class="item-image">
+										<div class="image-block">
 											<img src="./img/content-image-58.png" alt="Image Description" width="262" height="85">
 										</div>
 										<div class="description-block">
@@ -263,7 +252,7 @@
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 									<h3>tages</h3>
-									<div class="item item-tags">
+									<div class="item-tags">
 										<button type="button" class="btn btn-default">education</button>
 										<button type="button" class="btn btn-default">consulting</button>
 										<button type="button" class="btn btn-default">telicommunication</button>
@@ -326,7 +315,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-content address">
+			<aside class="aside">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -382,7 +371,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</aside>
 		</main>
 		<footer class="footer">
 			<div class="container">

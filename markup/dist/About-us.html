@@ -25,26 +25,18 @@
 			</div>
 			<div class="header-main">
 				<div class="container">
-					<nav class="navbar">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<div class="logo pull-left">
-								<a href="index.html" class="show">
-									<img src="./img/logo.png" alt="Onsult Plus" class="img-responsive" width="149" height="42">
-								</a>
-							</div>
-						</div>
-						<div class="collapse navbar-collapse navigation-collapse" id="myNavbar">
-							<ul class="nav navbar-nav navigation">
+					<div class="logo pull-left">
+						<a href="index.html"><img src="./img/logo.png" alt="Onsult Plus" class="img-responsive" width="149" height="42"></a>
+					</div>
+					<nav class="nav">
+						<a href="#" class="nav-opener"><span></span></a>
+						<div class="nav-drop">
+							<ul class="nav-menu">
 								<li class="active"><a href="#">home</a></li>
-								<li><a href="404.html">about us</a></li>
-								<li><a href="industry.html">industry</a></li>
+								<li><a href="#">about us</a></li>
+								<li><a href="#">industry</a></li>
 								<li><a href="#">services</a></li>
-								<li><a href="pages.html">pages</a></li>
+								<li><a href="#">pages</a></li>
 								<li><a href="#">contact us</a></li>
 							</ul>
 						</div>
@@ -55,9 +47,10 @@
 		<main class="main">
 			<section class="section-banner" style="background-image: url('./img/section-image-2.png')">
 				<div class="container">
-					<div class="banner-text">
-						<span class="orange-circle"></span>
-						<h1>about us</h1>
+					<div class="banner-wrapper">
+						<div class="text-banner">
+							<h1>about us</h1>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -71,13 +64,17 @@
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-7 col-md-5 col-lg-6">
-							<div class="description-block">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+							<div class="item-about">
+								<div class="description-block">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-7 col-md-4 col-lg-3">
-							<div class="description-block">
-								<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions.</p>
+							<div class="item-about">
+								<div class="description-block">
+									<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions.</p>
+								</div>
 							</div>
 						</div>
 						<div class="achievement-block">
@@ -92,7 +89,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-content-blue section-content-sm">
+			<section class="section-content-blue section-service">
 				<div class="container">
 					<div class="item-head">
 						<h3>our</h3>
@@ -100,7 +97,7 @@
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<div class="item item-service">
+							<div class="item-service">
 								<a href="#" class="icon-block icon-block-green">
 									<img src="./img/icon-image-5.png" alt="Image Description" width="45" height="45">
 								</a>
@@ -111,7 +108,7 @@
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<div class="item item-service">
+							<div class="item-service">
 								<a href="#" class="icon-block icon-block-green">
 									<img src="./img/icon-image-6.png" alt="Image Description" width="45" height="45">
 								</a>
@@ -122,7 +119,7 @@
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<div class="item item-service">
+							<div class="item-service">
 								<a href="#" class="icon-block icon-block-green">
 									<img src="./img/icon-image-7.png" alt="Image Description" width="45" height="45">
 								</a>
@@ -135,7 +132,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-content">
+			<section class="section-content section-content-sm">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -143,8 +140,8 @@
 								<h3>our</h3>
 								<h2>vision</h2>
 							</div>
-							<div class="item">
-								<div class="item-image">
+							<div class="item-description">
+								<div class="image-block">
 									<img src="./img/content-image-45.png" alt="Image Description" width="555" height="236">
 								</div>
 								<div class="description-block">
@@ -157,8 +154,8 @@
 								<h3>our</h3>
 								<h2>mission</h2>
 							</div>
-							<div class="item">
-								<div class="item-image">
+							<div class="item-description">
+								<div class="image-block">
 									<img src="./img/content-image-46.png" alt="Image Description" width="555" height="236">
 								</div>
 								<div class="description-block">
@@ -167,12 +164,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="section-bottom">
+					<div class="section-bottom section-bottom-border">
 						<button type="button" class="btn btn-default">contact us</button>
 					</div>
 				</div>
 			</section>
-			<section class="section-content section-content-border">
+			<section class="section-content">
 				<div class="container">
 					<div class="item-head">
 						<h3>our</h3>
@@ -180,11 +177,11 @@
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<div class="item item-manage">
-								<div class="item-image">
+							<div class="item-manage">
+								<div class="image-block">
 									<img src="./img/content-image-49.png" alt="Image Description" width="113" height="113">
 								</div>
-								<div class="item-description">
+								<div class="description-block">
 									<div class="item-head item-head-sm">
 										<h2>john marshel</h2>
 										<h3>ceo</h3>
@@ -199,11 +196,11 @@
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<div class="item item-manage">
-								<div class="item-image">
+							<div class="item-manage">
+								<div class="image-block">
 									<img src="./img/content-image-50.png" alt="Image Description" width="113" height="113">
 								</div>
-								<div class="item-description">
+								<div class="description-block">
 									<div class="item-head item-head-sm">
 										<h2>john marshel</h2>
 										<h3>ceo</h3>
@@ -218,11 +215,11 @@
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<div class="item item-manage">
-								<div class="item-image">
+							<div class="item-manage">
+								<div class="image-block">
 									<img src="./img/content-image-51.png" alt="Image Description" width="113" height="113">
 								</div>
-								<div class="item-description">
+								<div class="description-block">
 									<div class="item-head item-head-sm">
 										<h2>john marshel</h2>
 										<h3>ceo</h3>
@@ -242,7 +239,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-content address">
+			<aside class="aside">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -298,7 +295,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</aside>
 		</main>
 		<footer class="footer">
 			<div class="container">

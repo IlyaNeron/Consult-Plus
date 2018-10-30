@@ -1,0 +1,47 @@
+.item-business {
+
+  .description-block {
+    margin: 0 0 65px;
+  }
+
+}
+
+@media (max-width: $screen-lg-min) {
+
+  .item-business {
+
+    .description-block {
+      margin: 0 0 55px;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .item-business {
+
+    .description-block {
+      margin: 0 0 40px;
+    }
+
+    .image-block {
+      margin: 0 0 30px;
+    }
+
+  }
+
+}
+
+@media (max-width: $screen-md-min) {
+
+  .item-business {
+
+    .description-block {
+      margin: 0 0 30px;
+    }
+
+  }
+
+}

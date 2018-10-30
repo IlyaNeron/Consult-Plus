@@ -1,37 +1,47 @@
-.item {
+.item-description {
+  margin: 0 0 70px;
 
-  &-description {
-    font-family: $second-font-family-sans-serif;
-    margin: 0 0 50px;
-
-    h3 {
-      font-family: $font-family-sans-serif;
-    }
-
+  .image-block {
+    margin: 0 0 45px;
   }
 
 }
 
 @media (max-width: $screen-lg-min) {
 
-  &-description {
-    margin: 0 0 30px;
+  .item-description {
+    margin: 0 0 60px;
+
+    .image-block {
+      margin: 0 0 35px;
+    }
+
   }
 
 }
 
 @media (max-width: $screen-md-min) {
 
-  &-description {
-    margin: 0 0 25px;
+  .item-description {
+    margin: 0 0 50px;
+
+    .image-block {
+      margin: 0 0 30px;
+    }
+
   }
 
 }
 
 @media (max-width: $screen-sm-min) {
 
-  &-description {
-    margin: 0 0 20px;
+  .item-description {
+    margin: 0 0 30px;
+
+    .image-block {
+      margin: 0 0 25px;
+    }
+
   }
 
 }

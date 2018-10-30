@@ -1,6 +1,7 @@
 .media {
   position: relative;
   margin: 0;
+  display: table;
 
   &:after {
     content: '';

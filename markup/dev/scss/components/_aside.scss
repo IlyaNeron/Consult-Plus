@@ -1,4 +1,4 @@
-.address {
+.aside {
   padding: 90px 0 60px;
   background: $gray-dark;
 
@@ -13,7 +13,7 @@
 
 @media (max-width: $screen-lg-min) {
 
-  .address {
+  .aside {
     padding: 60px 0 50px;
   }
 
@@ -21,7 +21,7 @@
 
 @media (max-width: $screen-md-min) {
 
-  .address {
+  .aside {
     padding: 40px 0 30px;
 
     h3 {
@@ -34,7 +34,7 @@
 
 @media (max-width: $screen-sm-min) {
 
-  .address {
+  .aside {
     padding: 20px 0 20px;
   }
 

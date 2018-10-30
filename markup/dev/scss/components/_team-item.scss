@@ -1,4 +1,4 @@
-.team-item {
+.item-other-teams {
   margin: 0 0 30px;
   position: relative;
 
@@ -52,7 +52,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    bottom: 0;
+    bottom: 15px;
     transition: opacity 0.3s linear, visibility 0.3s linear;
     z-index: 2;
 

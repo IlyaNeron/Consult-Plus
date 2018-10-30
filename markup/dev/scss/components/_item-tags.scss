@@ -1,18 +1,14 @@
-.item {
+.item-tags {
+  margin: 0 0 60px;
 
-  &-tags {
-    margin: 0 0 60px;
+  .btn-default {
+    min-width: auto;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 10px;
 
-    .btn-default {
-      min-width: auto;
-      display: inline-block;
-      padding: 15px;
-      margin-bottom: 10px;
-
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
-
+    &:not(:last-child) {
+      margin-right: 10px;
     }
 
   }
@@ -21,12 +17,8 @@
 
 @media (max-width: $screen-lg-min) {
 
-  .item {
-
-    &-tags {
-      margin: 0 0 30px;
-    }
-
+  .item-tags {
+    margin: 0 0 30px;
   }
 
 }

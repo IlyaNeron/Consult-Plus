@@ -1,23 +1,15 @@
-.item {
+.item-service {
+  margin: 0 20px 45px 0;
 
-  &-service {
-    margin: 0 20px 45px 0;
+  .icon-block {
+    margin: 0 0 30px;
 
-    .icon-block {
-      margin: 0 0 40px;
-
-      i {
-        @include transition(color 0.3s linear);
-      }
-
-      &:hover i {
-        color: $brand-danger;
-      }
-
+    i {
+      @include transition(color 0.3s linear);
     }
 
-    .description-block {
-      margin: 0;
+    &:hover i {
+      color: $brand-danger;
     }
 
   }
@@ -26,15 +18,11 @@
 
 @media (max-width: $screen-lg-min) {
 
-  .item {
+  .item-service {
+    margin: 0 15px 40px 0;
 
-    &-service {
-      margin: 0 15px 35px 0;
-
-      .icon-block {
-        margin: 0 0 30px;
-      }
-
+    .icon-block {
+      margin: 0 0 30px;
     }
 
   }
@@ -43,15 +31,11 @@
 
 @media (max-width: $screen-md-min) {
 
-  .item {
+  .item-service {
+    margin: 0 0 30px;
 
-    &-service {
+    .icon-block {
       margin: 0 0 25px;
-
-      .icon-block {
-        margin: 0 0 25px;
-      }
-
     }
 
   }
@@ -60,15 +44,11 @@
 
 @media (max-width: $screen-sm-min) {
 
-  .item {
+  .item-service {
+    margin: 0 0 25px;
 
-    &-service {
-      margin: 0 0 15px;
-
-      .icon-block {
-        margin: 0 0 20px;
-      }
-
+    .icon-block {
+      margin: 0 0 20px;
     }
 
   }

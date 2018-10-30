@@ -1,87 +1,58 @@
-.item {
+.item-post {
+  margin: 0 0 25px;
+  display: block;
 
-  &-post {
-    margin: 0 0 25px;
-    display: block;
+  &-featured, &-related {
 
     &:last-child {
-      margin: 0 0 55px;
+      margin: 0 0 50px;
     }
 
-    &-featured, &-related {
+    .image-block {
+
+      img {
+        width: 100%;
+        height: auto;
+      }
 
       &:not(:last-child) {
-        margin: 0 0 25px;
-      }
-
-      .item-image {
-        margin: 0;
-
-        &:not(:last-child) {
-          margin: 0 0 20px;
-        }
-
-      }
-
-      .description-block {
-        margin: 0;
-        line-height: 1;
-
-        &:not(:last-child) {
-          margin: 0 0 30px;
-        }
-
-        h3 {
-          font-size: 14px;
-
-          &:not(:last-child) {
-            margin: 0 0 10px;
-          }
-
-        }
-
-        time {
-          text-transform: uppercase;
-          color: $brand-danger;
-          font-family: $font-family-sans-serif;
-          font-weight: 600;
-          display: block;
-        }
-
+        margin: 0 0 20px;
       }
 
     }
 
-    &-related {
-      margin: 0 0 90px;
+    .description-block {
+      line-height: 1;
 
-      .item-image {
+      &:not(:last-child) {
+        margin: 0 0 30px;
+      }
+
+      h3 {
+        font-size: 14px;
 
         &:not(:last-child) {
-          margin: 0 0 30px;
+          margin: 0 0 10px;
         }
 
+      }
+
+      time {
+        text-transform: uppercase;
+        color: $brand-danger;
+        font-family: $font-family-sans-serif;
+        font-weight: 600;
+        display: block;
       }
 
     }
 
   }
 
-  &-post-sm {
-    margin: 0 -15px 50px;
+  .item-related {
+    margin: 0 0 90px;
 
-    .item-image {
-      margin: 0;
-
-      &:not(:last-child) {
-        margin: 0 0 30px;
-      }
-
-    }
-
-    .item-description {
-      margin: 0;
-      padding: 28px 0;
+    .image-block {
 
       &:not(:last-child) {
         margin: 0 0 30px;
@@ -89,50 +60,63 @@
 
     }
 
+  }
+
+}
+
+.item-post-sm {
+  @include inline-space-reset;
+  margin: 0 0 55px;
+
+  .image-block {
+    width: 42%;
+    display: inline-block;
+    vertical-align: middle;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .description-block {
+    @include inline-space(1.8, 15px);
+    display: inline-block;
+    vertical-align: middle;
+    width: 58%;
+    padding-left: 30px;
   }
 
 }
 
 @media (max-width: $screen-lg-min) {
 
-  .item {
-
-    &-post-sm {
-      margin: 0 -15px 40px;
-
-      .item-description {
-        padding: 0;
-      }
-
-    }
-
+  .item-post-sm {
+    margin: 0 0 40px;
   }
 
 }
 
 @media (max-width: $screen-md-min) {
 
-  .item {
+  .item-post-sm {
+    margin: 0 0 25px;
 
-    &-post-sm {
-      margin: 0 -15px 25px;
-
-      .item-image {
-        margin: 0 0 20px;
-      }
-
+    .item-image {
+      margin: 0 0 20px;
     }
 
-    &-post {
+  }
 
-      &:last-child {
-        margin: 0 0 30px;
-      }
+  .item-post {
 
-      &-related:last-child {
-        margin: 0 0 30px;
-      }
+    &:last-child {
+      margin: 0 0 30px;
+    }
 
+    &-related:last-child {
+      margin: 0 0 30px;
     }
 
   }
@@ -141,20 +125,16 @@
 
 @media (max-width: $screen-sm-min) {
 
-  .item {
+  .item-post {
 
-    &-post {
-
-      &:last-child {
-        margin: 0 0 25px;
-      }
-
+    &:last-child {
+      margin: 0 0 25px;
     }
 
-    &-post-sm {
-      margin: 0 -15px 20px;
-    }
+  }
 
+  .item-post-sm {
+    margin: 0 0 20px;
   }
 
 }
