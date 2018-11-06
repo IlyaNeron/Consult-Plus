@@ -1,0 +1,60 @@
+.accordion-heading {
+  margin: 0 0 30px;
+  line-height: 1;
+
+  h3 {
+    margin: 0;
+    display: block;
+  }
+
+  a {
+    color: $gray-light-4;
+    cursor: default;
+    pointer-events: none;
+
+    &:hover {
+      color: $gray-light-4;
+    }
+
+  }
+
+}
+
+@media (min-width: $screen-sm-min) {
+
+  .open {
+    display: block !important;
+    height: 100% !important;
+  }
+
+}
+
+
+@media (max-width: $screen-sm-min) {
+
+  .accordion-heading {
+
+    a {
+      color: $brand-danger;
+      cursor: pointer;
+      display: block;
+      pointer-events: all;
+      padding: 15px;
+      border: 1px solid $brand-danger;
+      transition: 0.3s color linear, 0.3s border-color linear;
+
+      &:hover {
+        color: $brand-danger;
+        border-color: $brand-danger;
+      }
+
+    }
+
+    .collapsed {
+      color: $gray-light-4;
+      border-color: $gray-light-4;
+    }
+
+  }
+
+}

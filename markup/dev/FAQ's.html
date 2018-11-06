@@ -7,6 +7,13 @@
 	<title>Consult Plus</title>
 	<link rel="stylesheet" href="./css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Domine:400,700%7cLato:300,300i,400,700,900%7cMontserrat:300,400,600,700,800,900" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./img/favicon/gsafari-pinned-tab.sv" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 	<div class="wrapper">
@@ -25,26 +32,18 @@
 			</div>
 			<div class="header-main">
 				<div class="container">
-					<nav class="navbar">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<div class="logo pull-left">
-								<a href="index.html" class="show">
-									<img src="./img/logo.png" alt="Onsult Plus" class="img-responsive" width="149" height="42">
-								</a>
-							</div>
-						</div>
-						<div class="collapse navbar-collapse navigation-collapse" id="myNavbar">
-							<ul class="nav navbar-nav navigation">
+					<div class="logo pull-left">
+						<a href="index.html"><img src="./img/logo.png" alt="Onsult Plus" class="img-responsive" width="149" height="42"></a>
+					</div>
+					<nav class="nav">
+						<a href="#" class="nav-opener"><span></span></a>
+						<div class="nav-drop">
+							<ul class="nav-menu">
 								<li class="active"><a href="#">home</a></li>
-								<li><a href="404.html">about us</a></li>
-								<li><a href="industry.html">industry</a></li>
+								<li><a href="#">about us</a></li>
+								<li><a href="#">industry</a></li>
 								<li><a href="#">services</a></li>
-								<li><a href="pages.html">pages</a></li>
+								<li><a href="#">pages</a></li>
 								<li><a href="#">contact us</a></li>
 							</ul>
 						</div>
@@ -196,20 +195,26 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<div class="form-item-mail">
-								<h3>news letter</h3>
-								<div class="text-block">
-									<p>Enter your email address to subscribe our notification of our new post & features by email</p>
+								<div class="accordion-heading">
+									<h3><a data-toggle="collapse" class="collapsed" href="#collapseOne">new sletter</a></h3>
 								</div>
-								<form action="#" class="form-group">
-									<input type="email" class="form-control form-subscribe" placeholder="email address">
-									<button type="submit" class="btn btn-default">subscribe</button>
-								</form>
+								<div class="collapse open" id="collapseOne">
+									<div class="text-block">
+										<p>Enter your email address to subscribe our notification of our new post & features by email</p>
+									</div>
+									<form action="#" class="form-group">
+										<input type="email" class="form-control form-subscribe" placeholder="email address">
+										<button type="submit" class="btn btn-default">subscribe</button>
+									</form>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
 							<div class="list-item">
-								<h3>navigation</h3>
-								<ul class="list-unstyled">
+								<div class="accordion-heading">
+									<h3><a data-toggle="collapse" class="collapsed" href="#collapseTwo">navigation</a></h3>
+								</div>
+								<ul class="list-unstyled collapse open" id="collapseTwo">
 									<li><a href="#">home</a></li>
 									<li><a href="#">about us</a></li>
 									<li><a href="#">industry</a></li>
@@ -221,8 +226,10 @@
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
 							<div class="list-item">
-								<h3>industary</h3>
-								<ul class="list-unstyled">
+								<div class="accordion-heading">
+									<h3><a data-toggle="collapse" class="collapsed" href="#collapseThree">industary</a></h3>
+								</div>
+								<ul class="list-unstyled collapse open" id="collapseThree">
 									<li><a href="#">education</a></li>
 									<li><a href="#">business</a></li>
 									<li><a href="#">realestate</a></li>
@@ -235,8 +242,10 @@
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
 							<div class="list-item">
-								<h3>follow us</h3>
-								<ul class="list-unstyled">
+								<div class="accordion-heading">
+									<h3><a data-toggle="collapse" class="collapsed" href="#collapseFour">follow us</a></h3>
+								</div>
+								<ul class="list-unstyled collapse open" id="collapseFour">
 									<li><a href="#">facebook</a></li>
 									<li><a href="#">twitter</a></li>
 									<li><a href="#">instagram</a></li>

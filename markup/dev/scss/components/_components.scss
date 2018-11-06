@@ -153,27 +153,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  height: 5px;
   right: 0;
-  @include inline-space-reset;
-
-  &-item {
-    display: inline-block;
-    width: (100%/3);
-    height: 5px;
-  }
-
-  &-green {
-    background: $green;
-  }
-
-  &-orange {
-    background: $brand-danger;
-  }
-
-  &-blue {
-    background: $brand-info;
-  }
-
+  background-image: linear-gradient(to right, $green 33%, $brand-danger 33%, $brand-danger 66%, $brand-info 33%);
 }
 
 .happy-clients {

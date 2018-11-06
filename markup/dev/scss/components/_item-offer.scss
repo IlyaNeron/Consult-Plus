@@ -4,16 +4,7 @@
   &:not(:last-child) {
     margin: 0 0 40px;
     padding: 0 0 40px;
-  }
-
-  &:not(:last-child):after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: #e3eaed;
+    border-bottom: 1px solid #e3eaed;
   }
 
   &-wrapper {
