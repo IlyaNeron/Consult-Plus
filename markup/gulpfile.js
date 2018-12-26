@@ -15,7 +15,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
 		plumber      = require('gulp-plumber'),
 		sourcemaps   = require('gulp-sourcemaps')
 
-gulp.task('sass', function(){ // Создаем таск Sass
+gulp.task('sass', function() { // Создаем таск Sass
 	return gulp.src('dev/scss/**/*.scss') // Берем источник
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
